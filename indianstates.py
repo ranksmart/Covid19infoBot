@@ -32,5 +32,7 @@ def indianstate(states):
         states="".join(states)
         if stat.lower() == states.lower():
             return {'total' : state[1],'active' : state[2],'recovered' : state[3],'Death' : int(state[1])-int(state[2])-int(state[3])} 
+
+
             
-            
+# print(indianstate('bihar'))   

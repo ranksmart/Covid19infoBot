@@ -1,13 +1,11 @@
 # doing necessary imports
 from flask import Flask, render_template, request, make_response
 from flask_cors import CORS, cross_origin
-# import requests
-# import pymongo
 import json
 import MakeApiRequests
 import EMailClient
 from indianstates import indianstate
-# from pymongo import MongoClient
+
 
 app = Flask(__name__)  # initialising the flask app with the name 'app'
 
@@ -17,18 +15,35 @@ app = Flask(__name__)  # initialising the flask app with the name 'app'
 def welcome():
     return"""
     <!DOCTYPE html>
-<head>
-   <title>Covid19</title>
-</head>
-<body>  
-   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-<df-messenger
-  intent="WELCOME"
-  chat-title="Covid19_Cases"
-  agent-id="16f85c0e-f3bb-47e0-8883-7faf10beffd8"
-  language-code="en"
-></df-messenger>
-</body>
+        <head>
+            <title>Covid19</title>
+            <style>
+                body {
+                background-image: url('https://mir-s3-cdn-cf.behance.net/project_modules/1400/e9875d93978513.5e73847583b1e.jpg');
+                background-position:center center;
+                background-repeat: no-repeat;
+                background-size:cover;
+                background-attachment:fixed;
+                }
+                    @media only screen and (max-width: 768px) {
+                        body {
+                        background-image: url("https://image.freepik.com/free-vector/stay-home-stop-coronavirus-design-with-falling-covid-19-virus-abstract-house-light-background_1314-2679.jpg");
+                        }
+                        }
+            </style>
+        </head>
+    <body> 
+
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+        intent="WELCOME"
+        chat-title="Covid19_Cases_Info"
+        allow="microphone;"
+        agent-id="16f85c0e-f3bb-47e0-8883-7faf10beffd8"
+        language-code="en"
+        ></df-messenger>
+    </body>
+    </html>
     
     """
 
@@ -39,6 +54,7 @@ def webhook():
     res = processRequest(req)
     res = json.dumps(res, indent=4)
     print(res)
+    # return res
     r = make_response(res)
     r.headers['Content-Type'] = 'application/json'
     return r
@@ -202,6 +218,6 @@ def prepareEmail(contact_list):
 if __name__ == '__main__':
     # port = int(os.getenv('PORT'))
     # print("Starting app on port %d" % port)
-    app.run(debug=False)
+    app.run(debug=True,host='0.0.0.0')
 '''if __name__ == "__main__":
     app.run(port=5000, debug=True)''' # running the app on the local machine on port 8000
