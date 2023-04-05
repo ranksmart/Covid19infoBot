@@ -35,4 +35,4 @@ def sendEmail(contacts):
         smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
         smtp.send_message(msg)
 
-sendEmail(['rakesh','954333333','rakeshsinghsis123@gmail.com',[1,2,3,4,5],'india'])
+# sendEmail(['rakesh','954333333','rakeshsinghsis123@gmail.com',[1,2,3,4,5],'india'])
