@@ -3,4 +3,4 @@ bs4
 beautifulsoup4
 requests
 flask_cors
-email
+python-dotenv

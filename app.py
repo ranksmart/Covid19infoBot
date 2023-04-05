@@ -91,7 +91,7 @@ def processRequest(req):
             fulfillmentText.get('recovered')) + "\n" + " Total cases : " + str(fulfillmentText.get('total')) + \
                           "\n" + " Total Deaths : " + str(deaths_data.get('total')) + "\n" + " New Deaths : " + str(
             deaths_data.get('new')) + \
-                          "\n" + " Total Test Done : " + str(deaths_data.get('total')) + "\n\n*******END********* \n "
+                          "\n" + " Total Test Done : " + str(testsdone_data.get('total')) + "\n\n*******END********* \n "
 
         return {
 
@@ -119,11 +119,7 @@ def processRequest(req):
         fulfillmentText = result.get("fulfillmentText")
         # log.saveConversations(sessionID, query_text, fulfillmentText, intent, db)
     elif intent == "send_report_to_email":
-        fulfillmentText = result.get("fulfillmentText")
-        # log.saveConversations(sessionID, "Sure send email", fulfillmentText, intent, db)
-        # val = log.getcasesForEmail("country", "", db)
-        # print("===>",val)
-        print(fulfill.get("active"))
+        # print(fulfill.get("active"))
         prepareEmail([cust_name, cust_contact, cust_email,fulfill,country])
 
     elif intent == "totalnumber_cases":
