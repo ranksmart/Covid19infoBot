@@ -8,8 +8,8 @@ import os
 
 # class GMailClient:
 def sendEmail(contacts):
-    EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
-    EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
+    EMAIL_ADDRESS = 'covid19botinfo@gmail.com'
+    EMAIL_PASSWORD = 'wpxugpidbrsupcsu'
 
     msg = EmailMessage()
     msg['Subject'] = 'Detailed Covid-19 Report!'
