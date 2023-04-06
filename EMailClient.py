@@ -1,15 +1,15 @@
 import smtplib
 from email.message import EmailMessage
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
-import os
 
 
 # class GMailClient:
 def sendEmail(contacts):
-    EMAIL_ADDRESS = 'covid19botinfo@gmail.com'
-    EMAIL_PASSWORD = 'wpxugpidbrsupcsu'
+    EMAIL_ADDRESS = os.getenv('EMAIL_ADDRESS')
+    EMAIL_PASSWORD = os.getenv('EMAIL_PASSWORD')
 
     msg = EmailMessage()
     msg['Subject'] = 'Detailed Covid-19 Report!'
