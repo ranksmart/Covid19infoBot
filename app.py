@@ -25,7 +25,7 @@ def welcome():
                 background-size:cover;
                 background-attachment:fixed;
                 }
-                    @media only screen and (max-width: 768px) {
+                    @media only screen and (max-width: 1000px) {
                         body {
                         background-image: url("https://image.freepik.com/free-vector/stay-home-stop-coronavirus-design-with-falling-covid-19-virus-abstract-house-light-background_1314-2679.jpg");
                         }
