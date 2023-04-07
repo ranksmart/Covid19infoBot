@@ -29,15 +29,10 @@ def welcome():
                         body {
                         background-image: url("https://image.freepik.com/free-vector/stay-home-stop-coronavirus-design-with-falling-covid-19-virus-abstract-house-light-background_1314-2679.jpg");
                         }
-                        .df-messenger {
-                          position: relative;
-                          top: 57%;
-                          left: 53%;
-                          transform: translate(-50%, -50%);
-                        }
+                    
 
                         /* Increase the size of the chat icon */
-                       df-messenger .df-messenger-chat-icon {
+                       df-messenger.chat-icon {
                          width: 40px;
                          height: 40px;
                         }
