@@ -59,7 +59,7 @@ def welcome():
         <df-messenger class ="df-messenger"
         intent="WELCOME"
         chat-title="Covid19_Cases_Info"
-        chat-icon="https://img.freepik.com/free-vector/shield-protecting-virus-enter-concept-background_1017-24380.jpg?w=1060&t=st=1680883814~exp=1680884414~hmac=13667f4ce74cf528084d1c5fc0119941a5ace69f246d0fe608641bbe553f3c95" 
+        chat-icon="https://www.freepik.com/free-vector/covid-19-poster-with-virus-icon_7538380.htm#query=Coronovirus%20icon%20png&position=26&from_view=search&track=ais" 
         allow="microphone;"
         agent-id="16f85c0e-f3bb-47e0-8883-7faf10beffd8"
         language-code="en"
