@@ -216,4 +216,4 @@ if __name__ == '__main__':
     # print("Starting app on port %d" % port)
     app.run(debug=True,host='0.0.0.0')
 '''if __name__ == "__main__":
-    app.run(port=5000, debug=True)''' # running the app on the local machine on port 8000
+    app.run(port=5000, debug=True)''' # running the app on the local machine on 8K
