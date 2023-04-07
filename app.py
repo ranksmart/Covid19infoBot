@@ -59,7 +59,7 @@ def welcome():
         <df-messenger class ="df-messenger"
         intent="WELCOME"
         chat-title="Covid19_Cases_Info"
-        chat-icon="https://veloxac.com/wp-content/uploads/coronavirus.png" 
+        chat-icon="https://icons8.com/icon/U44lFbAzYvQ4/coronavirus" 
         allow="microphone;"
         agent-id="16f85c0e-f3bb-47e0-8883-7faf10beffd8"
         language-code="en"
