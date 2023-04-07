@@ -33,8 +33,8 @@ def welcome():
 
                         /* Increase the size of the chat icon */
                        df-messenger.chat-icon {
-                         width: 40px;
-                         height: 40px;
+                         width: 50px;
+                         height: 50px;
                         }
 
                         /* Add a hover effect to the chat icon */
@@ -43,6 +43,7 @@ def welcome():
                           cursor: pointer;
                           transform: scale(1.1);
                           transition: all 0.2s ease-in-out;
+                           width:50px;height:50px;
                         }
                     }
 
