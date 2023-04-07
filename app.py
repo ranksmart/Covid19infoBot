@@ -48,15 +48,15 @@ def welcome():
                     }
 
                .df-messenger-chat-icon-image {
-                  width: 50%;
-                  height: 60%;
+                  width: 5000%;
+                  height: 1000%;
                 }
             </style>
         </head>
-    <body class="df-messenger"> 
+    <body> 
 
         <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-        <df-messenger
+        <df-messenger class ="df-messenger"
         intent="WELCOME"
         chat-title="Covid19_Cases_Info"
         chat-icon="https://veloxac.com/wp-content/uploads/coronavirus.png" 
